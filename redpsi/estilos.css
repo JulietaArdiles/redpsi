@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0%;
+}
+
+header {
+    width: 100%;
+    background: #ECE4E5;
+    height: 70px;
+}
+
+/* aqui estamos modificando el ancho*/
+.ancho {
+    width: 80%;
+    height: 70px;
+    /*background: red;*/
+    margin: auto;
+}
+
+.logo {
+    width: 30%;
+    height: 70px;
+    /*background: blue;*/
+    float: left;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 70%;
+    height: 70px;
+    /*background: olive;*/
+    float: left;
+    text-align: right;
+    padding-top: 24px;
+    box-sizing: border-box;
+}
+
+.logo p a {
+    color: black;
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: mont;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 13px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: mont;
+}
+
+nav ul li a:hover {
+    color: #444;
+}
+
+@font-face {
+    font-family: mont;
+    src: url(fuentes/Montserrat-VariableFont_wght.ttf)
+}
+
+img {
+    align-items: right;
+    width: 650px;
+    height: auto;
+}
+
+.contenedor {
+    background: white;
+    height: 400px;
+    margin: 2rem auto;
+    text-align: left;
+    width: 400px;
+    position: absolute;
+    left: 850px;
+    top: 30%;
+    font-family: mont;
+}
+
+h1 {
+    font-family: mont;
+    font-size: small;
+    color: #D9D9D9;
+}
+
+h2 {
+    font-family: mont;
+    font-size: 300%;
+    text-align: left;
+}
+
+/*....pie de pagina*/
+.pie-pagina {
+    width: 100vw;
+    background-color: rgb(216, 214, 214);
+    position: relative;
+    padding: 1em 0;
+}
+
+.pie-pagina .grupo1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo1 .box figure {
+    width: 290px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.pie-pagina .grupo1 .box figure img {
+    width: 300px;
+    margin-left: 50px;
+
+}
+
+.pie-pagina .grupo1 .box h2 {
+    color: black;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo1 .box p {
+    color: #444;
+    margin-bottom: 10px;
+}
+
+
+.pie-pagina .grupo1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: black;
+    margin-right: 10px;
+    background-color: #444;
+    text-align: center;
+    transition: all 3000ms ease;
+
+
+}
+
+.pie-pagina .grupo1 .red-social a:hover {
+    color: #D9D9D9;
+}
+
+.pie-pagina .Grupo-2 {
+    background-color: grey;
+    padding: 15px 10px;
+    text-align: center;
+    color: #D9D9D9;
+}
+
+.pie-pagina .Grupo-2 small{
+    font-size: 15px;
+}
+
+@media screen and (max-width: 800px){
+    .pie-pagina .grupo1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+

@@ -1,0 +1,272 @@
+<!doctype <!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Contact Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" type="text/css" href="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <!-- my scripts -->
+</head>
+
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <a href="#" class="enlace">
+    </a>
+    <ul>
+      <li><a href="pages/indexhtml">Inicio</a></li>
+      <li><a href="pages/servicios.html">Servicios</a></li>
+      <li><a href="pages/contacto.html">Contacto</a></li>
+      <li><a href="pages/nosotros.html">Nosotros</a></li>
+    </ul>
+  </nav>
+
+
+
+  <div class="container">
+    <h1>Contactanos :)</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, expedita.</p>
+
+    <div class="alert" id="messages"></div>
+
+    <form method="post" action="" name="contact" id="contact" onsubmit="enviar(this); return false;">
+      <hr />
+      <!-- nombre  -->
+      <div class="form-group">
+        <label for="name">Nombre/Apellidos:</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text"><i class="fas fa-user"></i></div>
+          </div>
+          <input type="text" class="form-control" placeholder="Nombre" id="name" name="name" required />
+        </div>
+      </div>
+      <!-- telefono -->
+      <div class="form-group">
+        <label for="phone">Teléfono</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text"><i class="fas fa-mobile-alt"></i></div>
+          </div>
+          <input type="text" class="form-control" id="phone" name="phone" placeholder="Teléfono" required />
+        </div>
+      </div>
+      <!-- email -->
+      <div class="form-group">
+        <label>Email:</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text"><i class="fas fa-envelope"></i></div>
+          </div>
+          <input type="email" class="form-control" id="email" name="email" placeholder="su@email" required />
+        </div>
+        <small id="emailHelp" class="form-text text-muted">Su email no será compartido con nadie.</small>
+      </div>
+      <!-- mensaje -->
+      <div class="form-group">
+        <label for="subject">Asunto:</label>
+        <textarea placeholder="Asunto" id="subject" name="subject" class="form-control" required></textarea>
+      </div>
+
+      <!-- google recaptcha -->
+      <script src='https://www.google.com/recaptcha/api.js'></script>
+      <div class="g-recaptcha" data-sitekey="6LcDpKAUAAAAAPMVo11fCzBYnge6HnmSAg2PRDhP"></div>
+
+      <hr />
+      <!-- submit -->
+      <button type="submit" id="send" name="send">Enviar</button>
+
+
+
+    </form>
+
+  </div>
+  <style>
+    @import url('https://fonts.googleapis.com/css2? family= Roboto+Flex:opsz,wght@8..144,100 & display=swap');
+
+    * {
+      padding: 0;
+      margin: 0;
+      text-decoration: none;
+      list-style: none;
+      box-sizing: border-box;
+    }
+
+
+    nav {
+      background: #ECE4E5;
+      height: 80px;
+      width: 100%;
+    }
+
+    .enlace {
+      position: absolute;
+      padding: 20px 50px;
+    }
+
+    .logo {
+      height: 40px;
+    }
+
+    nav ul {
+      float: right;
+      margin-right: 20px;
+    }
+
+    nav ul li {
+      display: inline-block;
+      line-height: 80px;
+      margin: 0 5px;
+    }
+
+    nav ul li a {
+      color: black;
+      font-size: 18px;
+      padding: 7px 13px;
+      border-radius: 3px;
+      text-transform: uppercase;
+    }
+
+    li a.active,
+    li a:hover {
+      background: #787878;
+      transition: .5s;
+    }
+
+    .checkbtn {
+      font-size: 30px;
+      color: black;
+      float: right;
+      line-height: 80px;
+      margin-right: 40px;
+      cursor: pointer;
+      display: none;
+    }
+
+    #check {
+      display: none;
+    }
+
+    section {
+      background: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      height: calc(100vh - 80px);
+    }
+
+    @media (max-width: 952px) {
+      .enlace {
+        padding-left: 20px;
+      }
+
+      nav ul li a {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 858px) {
+      .checkbtn {
+        display: block;
+      }
+
+      ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+      }
+
+      nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+      }
+
+      nav ul li a {
+        font-size: 20px;
+      }
+
+      li a:hover,
+      li a.active {
+        background: none;
+      }
+
+      #check:checked~ul {
+        left: 0;
+      }
+    }
+
+
+    body {
+      font-family: Helvetica, san-serif;
+      background: -webkit-linear-gradient(90deg, #787878 10%, #F2F2F0 90%);
+      background: -moz-linear-gradient(90deg, #787878 10%, #F2F2F0 90%);
+      background: -ms-linear-gradient(90deg, #787878 10%, #F2F2F0 90%);
+      background: -o-linear-gradient(90deg, #787878 10%, #F2F2F0 90%);
+      background: linear-gradient(90deg, #787878 10%, #F2F2F0 90%);
+    }
+
+    .transition {
+      transition: .3s cubic-bezier(.3, 0, 0, 1.3)
+    }
+
+    #messages {
+      display: none;
+    }
+
+    .sect {
+      width: 100%;
+      min-height: 500px;
+    }
+
+    #sect1,
+    #sect3 {
+      background-color: #3333337d;
+      color: #fff;
+    }
+
+    #sect2 {
+      background-color: #dddddd7d;
+      color: #333;
+    }
+
+    video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 105%;
+      min-height: 100%;
+      transform: translateX(calc((100% - 100vw) / 2));
+      z-index: -2;
+    }
+
+    h1 {
+      margin: 0;
+      padding-top: 3rem;
+      padding-left: 2rem;
+    }
+
+    h2 {
+      margin: 0;
+      padding-top: 3rem;
+      padding-left: 2rem;
+    }
+  </style>
+
+</body>
+
+</html>

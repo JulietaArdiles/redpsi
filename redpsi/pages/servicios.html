@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Servicios</title>
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+    <header class="header">
+      <h1>Nuestros servicios :)</h1>
+    </header>
+    <main class="content">
+      <article class="article">
+        <h1>Talleres</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est corrupti repudiandae quo amet magnam
+          mollitia necessitatibus incidunt veritatis officia veniam aperiam, sunt cumque sequi? Perferendis
+          doloremque quaerat eos quas dolores.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, ipsum? Minus unde quia officiis ipsum
+          laboriosam dolorem. Similique, recusandae dicta.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, ipsum? Minus unde quia officiis ipsum
+          laboriosam dolorem. Similique, recusandae dicta.</p>
+      </article>
+
+      <article class="article">
+        <h1>Terapia de pareja</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est corrupti repudiandae quo amet magnam
+          mollitia necessitatibus incidunt veritatis officia veniam aperiam, sunt cumque sequi? Perferendis
+          doloremque quaerat eos quas dolores.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, ipsum? Minus unde quia officiis ipsum
+          laboriosam dolorem. Similique, recusandae dicta.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, ipsum? Minus unde quia officiis ipsum
+          laboriosam dolorem. Similique, recusandae dicta.</p>
+      </article>
+      <article class="article">
+        <h1>Terapia online</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est corrupti repudiandae quo amet magnam
+          mollitia necessitatibus incidunt veritatis officia veniam aperiam, sunt cumque sequi? Perferendis
+          doloremque quaerat eos quas dolores.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, ipsum? Minus unde quia officiis ipsum
+          laboriosam dolorem. Similique, recusandae dicta.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, ipsum? Minus unde quia officiis ipsum
+          laboriosam dolorem. Similique, recusandae dicta.</p>
+      </article>
+    </main>
+
+    <aside class="sidebar">
+      <section class="podcast">
+
+        <iframe style="border-radius:12px"
+          src="https://open.spotify.com/embed/episode/5aiyjsgmg6p9fNugEMp9v9?utm_source=generator" width="100%"
+          height="232" frameBorder="0" allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        <iframe style="border-radius:12px"
+          src="https://open.spotify.com/embed/episode/7BFTc4WZXOl07e6k8kCUzE?utm_source=generator" width="100%"
+          height="232" frameBorder="0" allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        <iframe style="border-radius:12px"
+          src="https://open.spotify.com/embed/episode/3BTIrPDSlzYrjoLGgkLrLE?utm_source=generator" width="100%"
+          height="232" frameBorder="0" allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        <iframe style="border-radius:12px"
+          src="https://open.spotify.com/embed/episode/2zsjbX8TTsr0qW0xbB1k5F?utm_source=generator" width="100%"
+          height="232" frameBorder="0" allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </aside>
+
+    <div class="related-post">
+      Terapia familiar
+    </div>
+    <div class="related-post">
+      Terapia para niñxs
+    </div>
+    <div class="related-post">
+      Terapia para adolescentes y adultos
+    </div>
+    <div class="related-post">
+      Aptos e informes psicológicos
+    </div>
+    <div class="related-post">
+      Orientación vocacional ocupacional
+    </div>
+
+    <footer class="footer">
+      <p>REDPSI &copy; 2022</p>
+
+    </footer>
+
+  </div>
+
+  <style>
+    /* General Styles */
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Helvetica, san-serif;
+      background: -webkit-linear-gradient(90deg, #787878 10%, #F2F2F0 90%);
+      background: -moz-linear-gradient(90deg, #787878 10%, #F2F2F0 90%);
+      background: -ms-linear-gradient(90deg, #787878 10%, #F2F2F0 90%);
+      background: -o-linear-gradient(90deg, #787878 10%, #F2F2F0 90%);
+      background: linear-gradient(90deg, #787878 10%, #F2F2F0 90%);
+    }
+
+
+    .transition {
+      transition: .3s cubic-bezier(.3, 0, 0, 1.3)
+    }
+
+    /* HEADER */
+
+    .title h1 {
+      padding: 20px 0;
+      text-align: center;
+      font-size: 2.9em;
+      text-transform: uppercase;
+    }
+
+    /* CONTAINER */
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 1.6em auto;
+      display: grid;
+      gap: 1.6em;
+      /* grid-template-columns: repeat(4, 1fr) 3%; */
+      grid-template-columns: repeat(5, 1fr);
+    }
+
+    .container>.header,
+    .container>.content,
+    .container>.sidebar,
+    .container>.footer,
+    .container>div {
+      background: #fff;
+      padding: 20px;
+      border: 1px solid #000000;
+    }
+
+    .container>.header,
+    .container>.footer {
+      grid-column: 1/-1;
+      background-color: #A2A6A1;
+      ;
+      color: #000000;
+    }
+
+    .container>.content {
+      grid-column: span 3;
+      grid-row: span 4;
+    }
+
+    .content>.article {
+      background: #F2CDAC;
+      padding: 20px;
+      margin-top: 5px;
+      color: #6E7372
+    }
+
+    .content .article h1,
+    .content .article p {
+      padding: 10px;
+    }
+
+    .container>.sidebar {
+      grid-column: span 2;
+      grid-row: span 4;
+      background: #878787;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container .sidebar img {
+      display: block;
+      width: 100%;
+      margin-top: 5px;
+    }
+
+    .container>.related-post {
+      background: #F2CDAC;
+      color: #ffffff;
+      height: 180px;
+      ;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.5s ease;
+    }
+
+    .container>.related-post:hover {
+      cursor: pointer;
+      color: #000000;
+      background: #8C7268;
+    }
+
+    /* MEDIA QUERIES */
+
+    @media screen and (max-width: 768px) {
+      .header {
+        text-align: center;
+      }
+
+      .container .content {
+        grid-column: 1 / -1;
+      }
+
+      .container .sidebar {
+        grid-column: 1 / 6;
+      }
+
+      .container .related-post {
+        grid-column: 1/-1;
+      }
+    }
+  </style>
+</body>
+
+</html>
